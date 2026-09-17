@@ -8,7 +8,7 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: d4c26ed7-3665-4366-a3f0-9a84b4cf4e26
 
-- Record revision: 473
+- Record revision: 474
 
 - Model hash: fnv1a-adee3cf8
 
@@ -35,7 +35,7 @@ Iy=5000 kg·m²; target=+0.12 rad/s²; competing=-750 N-m; density=1.225 kg/m³;
 
 **Student response:**
 ```
-Aerodynamic Control Stall & Flow Separation
+downward force aft of CG causes nose up 'cause moment occuring at the aft of the aircraft makes total moment to rotate down at the aft (nose up)
 ```
 
 ### assumptions

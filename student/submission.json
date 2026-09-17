@@ -13,7 +13,7 @@
   },
   "record": {
     "id": "d4c26ed7-3665-4366-a3f0-9a84b4cf4e26",
-    "revision": "473",
+    "revision": "474",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -40,7 +40,7 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": "Aerodynamic Control Stall & Flow Separation"
+        "text": "downward force aft of CG causes nose up 'cause moment occuring at the aft of the aircraft makes total moment to rotate down at the aft (nose up)"
       },
       "assumptions": {
         "suppliedBy": "student",
