@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: d4c26ed7-3665-4366-a3f0-9a84b4cf4e26
 
-- Record revision: 425
+- Record revision: 473
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -35,20 +35,30 @@ Iy=5000 kg·m²; target=+0.12 rad/s²; competing=-750 N-m; density=1.225 kg/m³;
 
 **Student response:**
 ```
-downward force aft of CG causes nose up 'cause moment occuring at the aft of the aircraft makes total moment to rotate down at the aft (nose up)
+Aerodynamic Control Stall & Flow Separation
 ```
 
 ### assumptions
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Local linear effectiveness (Delta C_m = C_m_delta . delta_e) assumes control moment scales directly with elevator deflection.It fails at large deflection angles due to flow separation and control stall, or at high speeds due to compressibility shocks and aeroelastic flexing.
+```
 
 ### model
 **Prompt:** Write your demand, dynamic-pressure, coefficient and moment equations. Identify which quantities are supplied and which are unknown.
 
 **Student response:**
-_Missing — no response supplied._
+```
+M_control + M_competing = I * q_dot_target
+
+M_control = q_dyn * S * c_bar * dCm
+
+q_dyn = 0.5 * rho * V^2
+
+dCm = Cm_delta * delta_e
+```
 
 ### prediction
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.

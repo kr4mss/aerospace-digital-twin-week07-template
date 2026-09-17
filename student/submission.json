@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "d4c26ed7-3665-4366-a3f0-9a84b4cf4e26",
-    "revision": "425",
+    "revision": "473",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -42,12 +40,12 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": "downward force aft of CG causes nose up 'cause moment occuring at the aft of the aircraft makes total moment to rotate down at the aft (nose up)"
+        "text": "Aerodynamic Control Stall & Flow Separation"
       },
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Local linear effectiveness (Delta C_m = C_m_delta . delta_e) assumes control moment scales directly with elevator deflection.It fails at large deflection angles due to flow separation and control stall, or at high speeds due to compressibility shocks and aeroelastic flexing."
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "M_control + M_competing = I * q_dot_target\n\nM_control = q_dyn * S * c_bar * dCm\n\nq_dyn = 0.5 * rho * V^2\n\ndCm = Cm_delta * delta_e"
       },
       "prediction": {
         "suppliedBy": "student",
