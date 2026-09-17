@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "physics",
       "assumptions",
       "model",
       "prediction",
@@ -16,7 +15,7 @@
   },
   "record": {
     "id": "d4c26ed7-3665-4366-a3f0-9a84b4cf4e26",
-    "revision": "1",
+    "revision": "425",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -43,7 +42,7 @@
       "physics": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "downward force aft of CG causes nose up 'cause moment occuring at the aft of the aircraft makes total moment to rotate down at the aft (nose up)"
       },
       "assumptions": {
         "suppliedBy": "student",
